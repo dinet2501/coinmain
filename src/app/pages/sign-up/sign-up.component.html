@@ -17,6 +17,11 @@
     <div class="regis">
       <div class="re"> <span class="no">Already have an account. </span><span title="Login"  routerLink="/sign-in" class="regisr">Login</span> </div>
     </div>
-    <div class="error">{{errorRegister}}</div>
+    <div *ngIf="errorsRegister" class="error">
+      <div *ngFor="let item of errorsRegister">{{item}}</div>
+      <div *ngIf="errorRegister">
+        {{errorRegister}}
+      </div>
+    </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import {AuthService} from '../../services/auth.service';
 export class SignUpComponent implements OnInit {
   user: UserModel = new UserModel();
   errorRegister;
+  errorsRegister;
   constructor(private authServices: AuthService) {}
 
   ngOnInit() {
@@ -23,11 +24,14 @@ export class SignUpComponent implements OnInit {
       }
     }, (error) => {
       console.log (error);
-      if (error.httpCode === 400) {
-        this.errorRegister = error.message[0];
-      } else {
-        this.errorRegister = error.message;
-      }
+      this.errorsRegister = error.error.message;
+      // if (error.httpCode === 400) {
+        
+      //   console.log(this.errorsRegister)
+      // } else {
+      //   this.errorRegister = error.message;
+      // }
+
     });
  }
 }
