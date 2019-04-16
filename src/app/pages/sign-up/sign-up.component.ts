@@ -24,7 +24,7 @@ export class SignUpComponent implements OnInit {
       }
     }, (error) => {
       console.log (error);
-      this.errorsRegister = error.error.message;
+      this.errorsRegister == You've registered succesfully. Please, click on "Login" link to log in;
       // if (error.httpCode === 400) {
         
       //   console.log(this.errorsRegister)
