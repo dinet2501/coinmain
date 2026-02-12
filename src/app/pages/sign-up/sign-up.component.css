@@ -9,6 +9,42 @@
   right: 0;
   overflow-y: auto;
 }
+
+.pitch {
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.pitch h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.pitch .lead {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.pitch ul {
+  margin-bottom: 12px;
+}
+
+.pitch li {
+  margin-bottom: 6px;
+}
+
+.pitch .stack {
+  margin-bottom: 8px;
+}
+
+.pitch .markets {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
 .newUrlPri {
   color: #e82169;
   outline: none;
